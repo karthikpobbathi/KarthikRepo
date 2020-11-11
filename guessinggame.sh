@@ -1,6 +1,7 @@
+#!/bin/bash
 function guess(){
     true_ans=$(ls -l |grep "^-"|wc -l)
-    while true;
+    while true
     do
         echo "pleas enter your guess"
         read  number
@@ -12,7 +13,7 @@ function guess(){
             echo "your guess is Greater then the true number"
         else
             echo " congratulation,you are right!"
-        break;
+        break
         fi
     done
 }
